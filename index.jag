@@ -1,0 +1,18 @@
+<%
+// var caramel;
+// 	reader = require('/modules/reader.js'),
+
+// 	caramel = require('caramel');
+// 	caramel.render({
+// 		'title': {text :'Blog Aggregator'},
+// 		'body': {text:reader.readPosts()}
+// 	});
+%>
+
+<%
+var absolute = require ('modules/absolute.js').mvc;
+var mvc = new absolute({
+	SERVER_URL:"/bloggerA/",
+});
+mvc.route(request);
+%>
